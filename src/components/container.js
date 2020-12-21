@@ -19,7 +19,7 @@ const Container = ({ defKey, children }) => {
   let headerColor = "rebeccapurple"
   return (
     <Layout>
-      <Header
+      {/* <Header
         style={{
           position: "fixed",
           zIndex: 1,
@@ -60,7 +60,10 @@ const Container = ({ defKey, children }) => {
       </Content>
       <Footer style={{ textAlign: "center" }}>
         © {new Date().getFullYear()} made by alienCY ^__^
-      </Footer>
+      </Footer> */}
+      <div>
+        {children}
+      </div>
     </Layout>
   )
 }

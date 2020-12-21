@@ -1,9 +1,10 @@
 import React from "react"
 import Container from "../components/container"
 import Image from "../components/image"
+import Main from "../components/Main/Main"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+/* const IndexPage = () => (
   <Container>
     <SEO title="Home" />
     <h1>Hi people</h1>
@@ -14,6 +15,18 @@ const IndexPage = () => (
       <Image />
     </div>
   </Container>
-)
+) */
+
+const IndexPage=()=>{
+  return(
+    <>
+    <Container>
+      
+      <Main></Main>
+    </Container>
+      
+    </>
+  );
+}
 
 export default IndexPage

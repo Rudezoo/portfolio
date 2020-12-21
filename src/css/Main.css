@@ -1,0 +1,115 @@
+@font-face{
+    font-family: 'flower';
+    src:url('../font/font.ttf') format('truetype') 
+}
+.Frame{
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: #2B2B2B;
+}
+.Intro{
+    background-image: url('../images/Intro2.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    opacity: 1;
+    
+}
+.Image{
+
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.Image2{
+    width: 50%;
+    height: 50%;
+
+    border: 3px solid white;
+    box-shadow: 2px 2px 10px black;
+}
+
+.Intro_Ment{
+
+    font-family: 'flower';
+    color: rgba(255, 255, 255, 1);
+    font-weight: 800;
+    font-size: 150px;
+    text-shadow: 2px 2px 2px gray;
+
+
+}
+.Intro_Ment2{
+
+    font-family: 'flower';
+    color: rgba(255, 255, 255, 1);
+    font-weight: 00;
+    font-size: 50px;
+}
+.Intro_Ment3{
+
+    font-family: 'flower';
+    color: rgba(255, 255, 255, 1);
+    font-weight: 00;
+    font-size: 40px;
+    margin-left: 30px;
+   
+}
+
+#flex_center{
+    display:flex;
+    align-Items:center;
+    justify-Content:center;
+}
+
+.card{
+
+    cursor: pointer;
+    animation-duration: 1s;
+    animation-name: oncard;
+}
+.card2{
+
+    cursor: pointer;
+    animation-duration: 1s;
+    animation-name: oncard2;
+}
+
+@keyframes oncard{
+    from{
+        opacity: 0;
+    }
+    50%{
+        margin-right: 100px;
+        opacity: 0;
+    }
+    to{
+        margin-right: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes oncard2{
+    from{
+        opacity: 0;
+    }
+    75%{
+        margin-right: 30px;
+        opacity: 0;
+    }
+    to{
+        margin-right: 0px;
+        opacity: 1;
+    }
+}
+
+.downbutton{
+    position: absolute;
+    top: 80%;
+    color: white;
+}

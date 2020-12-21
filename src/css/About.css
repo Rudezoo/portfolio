@@ -1,0 +1,27 @@
+
+.AboutFrame{
+    width: 100vw;
+    height: 50vh;
+
+    background-color:#2B2B2B;
+}
+.myImage{
+    margin: 40px;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+}
+.Info{
+    margin-top: 40px;
+    font-family: open-sans;
+    font-weight: bold;
+    color: white;
+}
+
+.Info_Content{
+    margin: 10px;
+    font-family: open-sans;
+    font-weight: lighter;
+    color: gray;
+}
