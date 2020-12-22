@@ -1,0 +1,30 @@
+{
+    "id":"About",
+    "About1" : "첫인상을 그리는 Front-end & Game 신입 개발자 김주언입니다. \n Front-end와 게임 개발에 큰 관심과 열정을 가지고 많은 프로젝트를 진행했습니다.\n해당 분야의 전문성을 기르기 위해 React등의 여러 Framework와 Unreal & Unity 엔진에 대해 학습 중에 있습니다.",
+    "About2" : "- Address : \n- Contact : ray9710@gmail.com\n",
+    "Resume_univ" : "숭실대학교\n",
+    "Resume_imp" : "소프트웨어학부 School of Software",
+    "Resume_prize" :{
+        "1":{
+            "date" : "2016.12",
+            "content" : "자동 수평 조정 테이블 개발"
+        },
+        "2":{
+            "date" : "2017.04",
+            "content" : "테이블 및 그의 자동 수평 조정방법 특허 출원"
+        },
+        "3":{
+            "date" : "2020.6",
+            "content" : "AR기반 SNS 개발"
+        },
+        "4":{
+            "date" : "2020.10",
+            "content" : "AR기반 SNS 개발 - 소프트웨어학부 소프트웨어공모전 은상 수상"
+        },
+        "5":{
+            "date" : "2016.12",
+            "content" : "온라인 시험 부정행위 방지 서비스 개발 - 온라인 시험 부정행위 방지 SW개발 공모전 총장상 수상"
+        }
+        
+    } 
+}

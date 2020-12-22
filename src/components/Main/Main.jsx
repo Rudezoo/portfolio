@@ -11,6 +11,7 @@ import MyCard from './MyCard';
 import Resume from './Resume';
 import Works from './Works';
 import Contact from './Contact';
+import {AiFillDownCircle} from 'react-icons/ai'
 
 
 const Main = () => {
@@ -24,6 +25,13 @@ const Main = () => {
     const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }));
 
     const { Text } = Typography;
+    
+    const OnDown=()=>{
+        window.scrollTo({
+            top:730,
+            behavior: 'smooth'     
+        })
+    }
 
     return (
         <>
@@ -70,7 +78,7 @@ const Main = () => {
 
                     <Header></Header>
                     <div className="downbutton">
-                        버튼입니다
+                        <AiFillDownCircle onClick={OnDown}></AiFillDownCircle>
                     </div>
                 </div>
                 <Space direction="vertical">
