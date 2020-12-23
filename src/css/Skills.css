@@ -1,0 +1,37 @@
+
+.Skills{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+}
+.content_skill{
+    font-family: godo;
+    width: 100%;
+    text-align: center;
+    margin: 60px;
+    white-space: pre-line;  
+    vertical-align: bottom;
+}
+.Divider{
+    font-family: godo;
+    font-size: 30px;
+    font-weight: bold;
+}
+.skills_icon{
+    padding: 200px;   
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.cardbox{
+    margin-top: 30px !important;
+    width: 250px;
+}

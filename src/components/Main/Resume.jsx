@@ -179,26 +179,6 @@ const Resume = () => {
 
                     </Space>
                 </div>
-                <div className="content">
-                    <Space direction="vertical" >
-                        <Row style={{
-                            width: "800px",
-                            height: "80px",
-                        }} >
-                            <Col span={8} style={{
-                                borderRight: "2px solid black"
-                            }} >
-                                <Text className="theme">운용기술</Text>
-                            </Col>
-
-                            <Col span={16}>
-
-                            </Col>
-                        </Row>
-
-
-                    </Space>
-                </div>
 
             </div>
 

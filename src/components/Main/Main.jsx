@@ -12,6 +12,7 @@ import Resume from './Resume';
 import Works from './Works';
 import Contact from './Contact';
 import {AiFillDownCircle} from 'react-icons/ai'
+import Skills from './Skills';
 
 
 const Main = () => {
@@ -28,7 +29,7 @@ const Main = () => {
     
     const OnDown=()=>{
         window.scrollTo({
-            top:730,
+            top:850,
             behavior: 'smooth'     
         })
     }
@@ -52,7 +53,7 @@ const Main = () => {
                         <div>
 
 
-                            <div className="card" >
+                            <div className="card1" >
                                 <animated.div style={{ transform: props.xy.interpolate(trans1) }}>
                                     <Text className="Intro_Ment">첫인상</Text>
                                     <Text className="Intro_Ment2">을 그리는 웹개발자</Text>
@@ -84,6 +85,7 @@ const Main = () => {
                 <Space direction="vertical">
                     <About></About>
                     <Resume></Resume>
+                    <Skills></Skills>
                     <Works></Works>
                     <Contact></Contact>
                 </Space>
