@@ -1,19 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../css/Main.css'
-import { Typography, Space,Divider} from 'antd';
+import { Typography, Space, Divider } from 'antd';
 import { useSpring, animated } from 'react-spring'
 import image from '../../images/Intro2.jpg'
-import image2 from '../../images/me.jpg'
+import {Link} from 'gatsby'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Header from './Header';
 import About from './About';
-import SwipeableViews from 'react-swipeable-views';
-import MyCard from './MyCard';
+
 import Resume from './Resume';
 import Works from './Works';
 import Contact from './Contact';
-import {AiFillDownCircle} from 'react-icons/ai'
+import { AiFillDownCircle } from 'react-icons/ai';
 import Skills from './Skills';
-
 
 const Main = () => {
 
@@ -26,13 +25,29 @@ const Main = () => {
     const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }));
 
     const { Text } = Typography;
-    
-    const OnDown=()=>{
-        window.scrollTo({
-            top:850,
-            behavior: 'smooth'     
-        })
+
+
+    const isMobile = () => {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
+
+    useEffect(() => {
+        if (isMobile()) {
+            alert('chrome browser로 접속해주시기 바랍니다!');
+            window.close();
+            window.open('about:blank', '_self').self.close();
+        } else {
+            const browse = navigator.userAgent.toLowerCase();
+            if ((navigator.appName == 'Netscape' && browse.indexOf('trident') != -1) || (browse.indexOf("msie") != -1)) {
+                alert("본 사이트는 크롬버전에 최적화되어있습니다.");
+                window.close();
+                window.open('about:blank', '_self').self.close();;
+            } else {
+                window.resizeTo(window.outerWidth,window.outerHeight)
+            }
+        }
+
+    }, []);
 
     return (
         <>
@@ -78,12 +93,12 @@ const Main = () => {
                     </div>
 
                     <Header></Header>
-                    <div className="downbutton">
-                        <AiFillDownCircle onClick={OnDown}></AiFillDownCircle>
+                    <div className="downbutton_div">
+                        <AnchorLink to="/#About" className="downbutton"><AiFillDownCircle/></AnchorLink>
                     </div>
                 </div>
                 <Space direction="vertical">
-                    <About></About>
+                    <About id="About"></About>
                     <Resume></Resume>
                     <Skills></Skills>
                     <Works></Works>

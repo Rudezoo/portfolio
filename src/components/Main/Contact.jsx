@@ -67,7 +67,7 @@ const Contact = () => {
     return (
         <>
 
-            <div className="Contact">
+            <div className="Contact" id="contact">
                 <div>
                     <Divider className="Divider" style={{
                         color: "white",

@@ -4,6 +4,8 @@ import Image from "../components/image"
 import Main from "../components/Main/Main"
 import SEO from "../components/seo"
 
+import {Link} from 'gatsby'
+
 /* const IndexPage = () => (
   <Container>
     <SEO title="Home" />
@@ -21,7 +23,6 @@ const IndexPage=()=>{
   return(
     <>
     <Container>
-      
       <Main></Main>
     </Container>
       

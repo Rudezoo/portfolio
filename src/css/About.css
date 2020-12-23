@@ -3,7 +3,7 @@
     src:url('../font/NanumSquareRoundR.ttf') format('truetype') 
 }
 .AboutFrame{
-    
+    padding-top: 30px;
     width: 100vw;
     height: 50%;
     background-color:#1f1f1f;

@@ -12,7 +12,7 @@ const Resume = () => {
 
     return (
         <>
-            <div className="resume">
+            <div className="resume" id="resume">
                 <div className="content" >
                     <Space direction="vertical" >
                         <Row justify="center" align="middle" style={{

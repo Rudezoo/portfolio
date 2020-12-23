@@ -4,32 +4,11 @@ import { Typography, Space, Divider, Button } from 'antd';
 import { Link } from 'gatsby'
 import image from '../../images/gatsby-icon.png'
 import { AiFillGithub, AiOutlineInstagram, AiFillFacebook, AiFillMail } from 'react-icons/ai'
-
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 const Header = () => {
     const { Text } = Typography;
 
 
-    const OnAbout = () => {
-        window.scrollTo({
-            top: 850,
-            behavior: 'smooth'
-        })
-
-    }
-    const OnResume = () => {
-        window.scrollTo({
-            top: 1310,
-            behavior: 'smooth'
-        })
-
-    }
-    const OnWorks = () => {
-        window.scrollTo({
-            top: 3500,
-            behavior: 'smooth'
-        })
-
-    }
     const OnContact = () => {
         window.scrollTo({
             top: 6700,
@@ -58,10 +37,11 @@ const Header = () => {
             {/* <img src={image} className="icon_logo"></img> */}
 
             <Space className="header" split={<Divider type="vertical" />} size={50}>
-                <Text className="menu_link" onClick={OnAbout}>ABOUT</Text>
-                <Text className="menu_link" onClick={OnResume}>RESUME</Text>
-                <Text className="menu_link" onClick={OnWorks}>WORKS</Text>
-                <Text className="menu_link" onClick={OnContact}>CONTACT</Text>
+                <AnchorLink to="/#About" className="menu_link">ABOUT</AnchorLink>
+                <AnchorLink to="/#resume" className="menu_link">RESUME</AnchorLink>
+                <AnchorLink to="/#works" className="menu_link">WORKS</AnchorLink>
+                <AnchorLink to="/#contact" className="menu_link">CONTACT</AnchorLink>
+                {/* <Text className="menu_link" onClick={OnContact}>CONTACT</Text> */}
             </Space>
 
             <Space className="icon2">

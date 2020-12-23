@@ -45,7 +45,7 @@ const Works = () => {
 
     return (
         <>
-            <div className="works">
+            <div className="works" id="works">
                 <Divider ><Text className="Divider">WORKS</Text></Divider>
                 <VerticalTimeline>
                     <VerticalTimelineElement

@@ -5,13 +5,12 @@ import { Link } from 'gatsby'
 import image from '../../images/me.jpg'
 import content from '../../Content/About.json'
 
-
 const About = () => {
     const { Text } = Typography;
 
     return (
         <>
-            <div className="AboutFrame">
+            <div className="AboutFrame" id="About">
                 <Row>
                     <Col span={8}>
                         <img src={image} className="myImage"></img>

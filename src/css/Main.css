@@ -14,7 +14,9 @@ body::-webkit-scrollbar-thumb {
     border-radius: 8px;
     outline: 1px solid #2B2B2B;
 }
-
+body {
+    scroll-behavior: smooth;
+}
 .Frame{
     -ms-user-select: none; 
     -moz-user-select: -moz-none;
@@ -76,7 +78,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: 00;
     font-size: 40px;
     margin-left: 30px;
-   
 }
 
 #flex_center{
@@ -126,9 +127,11 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.downbutton{
+.downbutton_div{
     position: absolute;
     top: 80%;
+}
+.downbutton{  
     color: white;
     font-size: 50px;
     transition: font-size 0.3s;

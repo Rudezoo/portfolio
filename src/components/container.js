@@ -18,7 +18,7 @@ const Container = ({ defKey, children }) => {
 
   let headerColor = "rebeccapurple"
   return (
-    <Layout>
+    <div>
       {/* <Header
         style={{
           position: "fixed",
@@ -61,10 +61,8 @@ const Container = ({ defKey, children }) => {
       <Footer style={{ textAlign: "center" }}>
         © {new Date().getFullYear()} made by alienCY ^__^
       </Footer> */}
-      <div>
         {children}
-      </div>
-    </Layout>
+    </div>
   )
 }
 Container.propTypes = {
