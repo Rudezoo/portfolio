@@ -13,6 +13,7 @@ import Works from './Works';
 import Contact from './Contact';
 import { AiFillDownCircle } from 'react-icons/ai';
 import Skills from './Skills';
+import Bottom from './Bottom';
 
 const Main = () => {
 
@@ -97,12 +98,13 @@ const Main = () => {
                         <AnchorLink to="/#About" className="downbutton"><AiFillDownCircle/></AnchorLink>
                     </div>
                 </div>
-                <Space direction="vertical">
+                <Space direction="vertical" size={0}> 
                     <About id="About"></About>
                     <Resume></Resume>
                     <Skills></Skills>
                     <Works></Works>
                     <Contact></Contact>
+                    <Bottom></Bottom>
                 </Space>
 
 

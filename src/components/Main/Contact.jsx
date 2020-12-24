@@ -14,16 +14,16 @@ const Contact = () => {
     const [Message, setMessage] = useState("");
 
     const layout = {
-        labelCol: { span: 5 },
+        labelCol: { span: 7 },
         wrapperCol: { span: 7 },
     };
     const layout2 = {
-        labelCol: { span: 5 },
+        labelCol: { span: 7 },
         wrapperCol: { span: 7 },
     };
     const layout3 = {
-        labelCol: { span: 5 },
-        wrapperCol: { span: 14 },
+        labelCol: { span: 7 },
+        wrapperCol: { span: 11 },
     };
     const tailLayout = {
         wrapperCol: { offset: 11, span: 16 },

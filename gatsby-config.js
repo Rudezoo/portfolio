@@ -1,6 +1,7 @@
 const lessToJson = require('less-to-json'); 
 
 module.exports = {
+  pathPrefix: "/portfolio",
   siteMetadata: {
     title: "Gatsby Ant Design Starter",
     description: `Kick off your next, great Gatsby project with this extra awesome ant design starter!`,
