@@ -50,7 +50,7 @@ const Resume = () => {
                             </Col>
 
                             <Col span={17} className="prize">
-                                <VerticalTimeline layout="1-column-left">
+                                <VerticalTimeline layout="1-column-left" className="custom-line">
                                     <VerticalTimelineElement
                                         className="vertical-timeline-element--work vertical-timeline.vertical-timeline-custom-line "
                                         contentStyle={{ background: 'white', color: '#fff', border: "4px solid #1ac5ae", display:"flex",alignItems:"center",width:"700px" }}

@@ -47,7 +47,7 @@ const Works = () => {
         <>
             <div className="works" id="works">
                 <Divider ><Text className="Divider">WORKS</Text></Divider>
-                <VerticalTimeline>
+                <VerticalTimeline className="custom-line2">
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work android"
                         contentStyle={{ background: 'white', color: '#fff', border: "0px solid #8dd35f",width:"500px",boxShadow:"0px 0px 0px" }}

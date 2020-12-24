@@ -53,13 +53,21 @@ const Contact = () => {
                     message:"메일 전송 성공!",
                     description:"메일 전송에 성공했습니다! 메일을 보내주셔서 감사합니다!",
                     placement:"bottomRight",
+                    style:{
+                        fontFamily:"godo",
+                        fontWeight:"bold"
+                    }
                 });
             }, (err) => {
                 console.log('FAILED...', err);
                 notification.error({
                     message:"메일 전송 실패!",
                     description:"메일 전송에 실패했습니다! 개인메일로 ray9710@gmail.com로 따로 문의주세요!",
-                    placement:"bottomRight"
+                    placement:"bottomRight",
+                    style:{
+                        fontFamily:"godo",
+                        fontWeight:"bold"
+                    }
                 });
             });
     };
